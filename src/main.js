@@ -1,3 +1,4 @@
+import './styles.scss';
 import { pingPong } from './ping-pong';
 
 $(document).ready(function() {
@@ -5,6 +6,7 @@ $(document).ready(function() {
     event.preventDefault();
     var goal = $('#goal').val();
     var output = pingPong(goal);
+    console.log("hellow");
     output.forEach(function(element) {
       $('#solution').append("<li>" + element + "</li>");
     });
