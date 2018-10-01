@@ -3,14 +3,31 @@
 <html>
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <title>Ping Pong</title>
+    <title>Journal Entry</title>
   </head>
   <body>
-    <form id="ping-pong-form">
-      <label for="goal">Enter a number:</label>
-      <input id="goal" type="number">
-      <button type="submit">Submit</button>
-    </form>
-    <ul id="solution"></ul>
+    <div class="header">
+      <h1>Page Title</h1>
+    </div>
+
+    <div class="new-entry">
+      <form id="entry-form">
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <input class="form-control" id="subject">
+        </div>
+        <div class="form-group">
+          <label for="body">Body</label>
+          <input class="form-control" id="body">
+        </div>
+        <button type="submit" id="get-new-entry" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+
+    <h1>JOURNAL</h1>
+    <div class="journal-container">
+
+    </div>
+
   </body>
 </html>

@@ -1,7 +1,6 @@
 {
   "name": "ping-pong",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode development",
@@ -21,5 +20,17 @@
     "webpack": "^4.0.1",
     "webpack-cli": "^2.0.9",
     "webpack-dev-server": "^3.1.0"
-  }
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taliahaller/skeleton-js-dev-environment.git"
+  },
+  "bugs": {
+    "url": "https://github.com/taliahaller/skeleton-js-dev-environment/issues"
+  },
+  "homepage": "https://github.com/taliahaller/skeleton-js-dev-environment#readme",
+  "description": ""
 }

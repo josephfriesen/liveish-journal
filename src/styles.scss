@@ -1,3 +1,25 @@
-body {
-  background-color: #7FDBFF;
+.entry-display {
+  width: 100%;
+  height: auto;
+  padding: 25px;
+}
+
+.entry-display:nth-child(odd) {
+  background-color: #ccc9c9;
+}
+
+.hidden {
+  display: none;
+}
+
+.meta-data {
+  font-size: .5em;
+  margin-block-start: .2em;
+  margin-block-end: .2em;
+  font-weight: bold;
+  padding-right: 15px;
+}
+
+.inline {
+  display: inline;
 }
