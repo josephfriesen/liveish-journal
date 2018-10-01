@@ -1,5 +1,6 @@
 import './styles.scss';
 import { Entry } from './ping-pong';
+import 'bootstrap/dist/css/bootstrap.min.css';
 // import { pingPong } from './ping-pong';
 
 var allEntries = [];
@@ -21,7 +22,7 @@ $(document).ready(function() {
         "<p class='entry-body hidden meta-data'> Number of Words: " + journalEntry.wordCount() + "</p>" +
         "<p class='entry-body hidden meta-data'> Vowels: " + journalEntry.vowelCount() + "</p>" +
         "<p class='entry-body hidden meta-data'> Consonants: " + journalEntry.consonantCount() + "</p>" +
-        "<button type='button' class='btn btn-default expand-button'>Expand Entry</button>"
+        "<button type='button' class='expand-button'>Expand Entry</button>"
       );
       $(".expand-button:first").click(function() {
         $(this).siblings(".teaser, .entry-body").toggleClass("hidden");

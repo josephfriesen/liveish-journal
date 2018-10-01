@@ -29,13 +29,18 @@ module.exports = {
         test: /\.scss$/,
         use: [
           'style-loader',
-          'css-loader'
+          'css-loader',
+          'sass-loader'
         ]
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
         loader: "eslint-loader" //must be placed last in the array of rules, loaders applied bottom to top so by placiting it by the bottom, we ensure that it executes first before our other loaders
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
       }
     ]
   }
